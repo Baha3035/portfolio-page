@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+
+<nav class="sidebar hide-medium hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<nav class="sidebar black animate-right xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="#" onclick="closeNav()" class="button black xxxlarge display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="bar-block center">
+    <a href="#" class="bar-item button text-grey hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="bar-item button text-grey hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="bar-item button text-grey hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="bar-item button text-grey hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<div class="main padding-large" style="margin-left:40%">
+
+  <span class="button top white xxlarge text-grey hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <header class="container center" style="padding:128px 16px" id="home">
+    <h1 class="jumbo"><b>John Doe</b></h1>
+    <p>Programmer and Web Designer.</p>
+  </header>
+
+  <div class="padding-32 content" id="portfolio">
+    <h2 class="text-grey">My Portfolio</h2>
+    <hr class="opacity">
+
+    <div class="projects">
+      <a class="link" target="_blank" href="https://github.com/Baha3035/tg-bot-pg-heroku">Store bot</a>
+
+      <a class="link" target="_blank" href="https://github.com/Baha3035/flat-order-service">Flat order service</a>
+
+      <a class="link" target="_blank" href="https://github.com/Baha3035/helm-guestbook">Guest book</a>
+
+      <a class="link" target="_blank" href="https://github.com/Baha3035/school_app">School app</a>
+
+      <a class="link mb-0" target="_blank" href="https://github.com/Baha3035/expiry-check-xml">Expire check xml</a>
+
+      <a class="link mb-0" target="_blank" href="https://github.com/Baha3035/game_of_foxes">Game of foxes</a>
+    </div>
+  </div>
+
+  <div class="content justify text-grey padding-32" id="about">
+    <h2>About</h2>
+    <hr class="opacity">
+    <p>Hello, my name is Bakhtiyar, I am a Junior DevOps Engineer and Python enthusiast. I was born in Kyrgyzstan in 2003. Growing up I loved when others praised me, so I was really into getting good grades at school. There I have found my best friends and got a lot of great memories. Also I have found out my passion for math, computers and science in general. Now I study Computer Science in AlaToo IU, here I have my like-minded coder bros and people I can chill with. Oh about my hobbies, watching and playing basketball is my favorite. I mainly watch NBA Golden State Warriors games and I am a big fan of Stephen Curry. It's a pure enjoyment when he swishes barrage of threes. Also, for the past couple of years I'm into bodybuilding. It helps me to stay motivated and out of stress and obviously it brings great joy. Great hobbies, but who doesn't like to lie on a couch, eat junkfood and watch action movies sometimes, and it sums up my free time killers list. In the future I want to start a tech company that will bring great value for Kyrgyzstan.
+    </p>
+    <h3 class="padding-16">My Skills</h3>
+
+    <ul class="myList">
+      <li>
+        <p class="wide">Java</p>
+        <div class="light-grey">
+          <div class="container center padding-small dark-grey" style="width:95%">95%</div>
+        </div>
+      </li>
+
+      <li>
+        <p class="wide">Python</p>
+        <div class="light-grey">
+          <div class="container center padding-small dark-grey" style="width:95%">95%</div>
+        </div>
+      </li>
+
+      <li>
+        <p class="wide">JavaScript</p>
+        <div class="light-grey">
+          <div class="container center padding-small dark-grey" style="width:50%">50%</div>
+        </div>
+      </li>
+
+      <li>
+        <p class="wide">PostgreSQL</p>
+        <div class="light-grey">
+          <div class="container center padding-small dark-grey" style="width:100%">100%</div>
+        </div>
+      </li>
+
+      <li>
+        <p class="wide">Git</p>
+        <div class="light-grey">
+          <div class="container center padding-small dark-grey" style="width:100%">100%</div>
+        </div>
+      </li>
+
+      <li>
+        <p class="wide">Spring framework</p>
+        <div class="light-grey">
+          <div class="container center padding-small dark-grey" style="width:60%">60%</div>
+        </div>
+      </li>
+
+      <li>
+        <p class="wide">Basketball</p>
+        <div class="light-grey">
+          <div class="container center padding-small dark-grey" style="width:100%">100%</div>
+        </div>
+      </li>
+    </ul>
+    <br>
+  </div>
+
+  <div class="padding-32 content text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="opacity">
+
+    <div class="section">
+      <p><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> <span class="mb-4">Bishkek, Kyrgyzstan</span></p>
+      <p><i class="fa fa-phone fa-fw xxlarge margin-right"></i> <span class="mb-4">Phone: +996 777777777</span></p>
+      <p><i class="fa fa-envelope fa-fw xxlarge margin-right"> </i> <span class="mb-4">Email: email@gmail.com</span></p>
+    </div>
+   
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form>
+      <p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="input padding-16 border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="input padding-16 border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="input padding-16 border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="button light-grey padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>  
+  
+  <footer class="container padding-64 light-grey center opacity xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official hover-opacity"></i>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <i class="fa fa-snapchat hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-twitter hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>
+  </footer>
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
