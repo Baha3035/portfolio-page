@@ -7,14 +7,24 @@
 }
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   justify-content: space-between;
   gap:10px 40px;
 }
+
+@media screen and (min-width: 600px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .link {
+    width: 250px;
+  }
+}
+
 .link {
   padding: 10px 16px;
   background-color: #75757E;
-  width: 250px;
+  width: 100%;
   cursor: pointer;
   display: block;
   color: white;
@@ -31,7 +41,8 @@
 }
 
 .title {
-  overflow: hidden;
+  font-size: 4vw;
+  overflow: hidden;  
   border-right: .15em solid orange;
   white-space: nowrap; 
   margin: 0 auto;
@@ -56,6 +67,13 @@
     typing 3.5s 1s steps(40, end) infinite,
     blink-caret .75s step-end infinite,
     textclip 2s linear infinite;
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 5vw;
+    border-right: none;
+  }
 }
 
 @keyframes typing {
