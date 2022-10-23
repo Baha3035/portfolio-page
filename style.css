@@ -21,6 +21,12 @@
   }
 }
 
+.clicker-btn {
+  display: flex;
+  text-align: center;
+  gap: 10px
+}
+
 .link {
   padding: 10px 16px;
   background-color: #75757E;

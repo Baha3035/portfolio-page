@@ -37,6 +37,18 @@
   </header>
 
   <div class="padding-32 content" id="portfolio">
+    <h2 class="text-grey" data-click="0">Clicker</h2>
+    <hr class="opacity">
+
+    <div class="clicker-btn">
+      <button id="click" class="button light-grey padding-large" type="submit">
+        Click me
+      </button>
+      <h5 class="text-grey" data-click="0">Total clicks: <span id="counter" data-click="0">0</span> </h2>
+    </div>
+  </div>
+
+  <div class="padding-32 content" id="portfolio">
     <h2 class="text-grey">My Portfolio</h2>
     <hr class="opacity">
 
@@ -160,6 +172,13 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
 }
+
+let btn = document.getElementById('click')
+let counter = document.getElementById('counter')
+btn.addEventListener('click', () => {
+  let countInt = +counter.textContent
+  counter.textContent = countInt+1
+})
 </script>
 
 </body>
