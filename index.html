@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./library.css">
-  <link rel="stylesheet" href="./style.css"> 
+  <link rel="stylesheet" href="./css/library.css">
+  <link rel="stylesheet" href="./css/style.css"> 
 </head>
 <body>
 
@@ -127,6 +127,13 @@
     <br>
   </div>
 
+  <div class="padding-32 content text-grey">
+    <div class="img-block">
+      <img class="img" src="" alt="random">
+    </div>
+    <button class="btn_img button light-grey padding-large">Reload</button>
+  </div>
+
   <div class="padding-32 content text-grey" id="contact" style="margin-bottom:64px">
     <h2>Contact Me</h2>
     <hr class="opacity">
@@ -163,23 +170,7 @@
   
 </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-let btn = document.getElementById('click')
-let counter = document.getElementById('counter')
-btn.addEventListener('click', () => {
-  let countInt = +counter.textContent
-  counter.textContent = countInt+1
-})
-</script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>
